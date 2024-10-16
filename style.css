@@ -1,0 +1,66 @@
+body {
+    margin: 0 0 0 0;
+    background-color: green;
+    display: flex;
+}
+
+#cabecalho {
+    width: 100%;
+    height: 350px;
+    background-color: rgb(73, 94, 94);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#titulo_1{
+    font-size: 70px;
+    margin-bottom: 0;
+    color: rgb(0, 204, 255);
+    font-family: "Playfair Display", serif;
+
+}
+#subtitulo {
+    font-size: 30px;
+    text-align: center;
+    margin-top: 15px;
+    margin-bottom: 0px;
+    font-family: "Quicksand", sans-serif;
+    color: rgb(255, 136, 77);
+}
+
+#pesquisa {
+    width: 60%;
+    height: 120px;
+    margin-top: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#barra_pesquisa {
+    width: 70%;
+    height: 40%;
+    border-radius: 30px;
+    border: solid 3px rgb(0, 204, 255);
+    background-color: rgba(140, 217, 236, 0.555);
+}
+
+#barra_pesquisa::placeholder  {
+    color: rgb(255, 250, 248);
+    font-weight: bold;
+    font-size: 16px;
+    margin-left: 80px;
+    padding: 10px;
+}
+
+#btn_pesquisar {
+    border: none;
+    background-color: rgb(73, 94, 94);
+}
+
+#cabecalho img {
+    width: 50px;
+}
+
