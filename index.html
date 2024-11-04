@@ -8,6 +8,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Agdasima:wght@400;700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Agdasima:wght@400;700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quicksand:wght@300..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@100..900&family=Inconsolata:wght@200..900&family=Protest+Guerrilla&display=swap" rel="stylesheet">
     <title>Senac.ly - seu site de músicas</title>
 </head>
 <body>
@@ -17,32 +18,41 @@
             <h3 id="subtitulo">Uma maneira fácil e rápida de <br> encontrar suas músicas favoritas!</h3>
             
             <div id="pesquisa">
-                <input type="text" id="barra_pesquisa" placeholder="Pesquisar...">
+                <input type="text" id="barra_pesquisa" placeholder="Procure pelo seu gênero favorito">
                 <button id="btn_pesquisar"><img src="img/lupa.png" id="img_lupa"></button>
             </div>
     </header>
+    
+    <div id="janela_player">
+        <button type="button" id="btn_player">X</button>
+        <p>Você está ouvindo...</p>
+        <img src="" id="img_player">
+        <h1 id="artista_player"></h1>
+        <h3 id="titulo_player"></h3>
+        <audio src="" controls id="player"></audio>
+    </div>
 
     <div id="musicas">
 
         <h4 class="titulo_corpo">Sugestões para você:</h4>
         <div id="linha_1" class="linhas">
-        <div id="musica1">
-            <img src="img/pop/beat_it.png" alt="beat it" id="img_beatit" id="pop">
+        <div id="beatit_sugestoes">
+            <img src="img/pop/beat_it.png">
             <h4 class="nome_musica">Beat it</h4>
             <h4 class="cantor_musica">Michael Jackson</h4>
         </div>
-        <div id="musica2">
-            <img src="img/rock/cant_stop.png" alt="can't stop" id="img_cantstop" id="rock">
+        <div id="cantstop_sugestoes">
+            <img src="img/rock/cant_stop.png">
             <h4 class="nome_musica">Can't stop</h4>
             <h4 class="cantor_musica">Red Hot Chiller Pepper</h4>
         </div>
-        <div id="musica3">
-            <img src="img/trap/cicatrizes.png" alt="cicatrizes" id="img_cicatrizes" id="trap">
+        <div id="cicatrizes_seguestoes">
+            <img src="img/trap/cicatrizes.png">
             <h4 class="nome_musica">Cicatrizes</h4>
             <h4 class="cantor_musica">LetoDie Feat. FILL</h4>
         </div>
-        <div id="musica4">
-            <img src="img/pop/when_you're_gone.png" alt="when you're gone" id="pop">
+        <div id="gone_sugestoes">
+            <img src="img/pop/when_you're_gone.png">
             <h4 class="nome_musica">When you're gone</h4>
             <h4 class="cantor_musica">Shawn Mendes</h4>
         </div>
@@ -50,49 +60,49 @@
 
         <h4 class="titulo_corpo">Experimente algo novo:</h4>
         <div id="linha_2" class="linhas">
-            <div id="musica1">
-                <img src="img/eletronica/alone.icon.jpg" alt="alone" id="alone" id="eletronica">
+            <div id="alone_experimente">
+                <img src="img/eletronica/alone.icon.jpg">
                 <h4 class="nome_musica">Alone</h4>
                 <h4 class="cantor_musica">Marshmallow</h4>
             </div>
-            <div id="musica2">
-                <img src="img/funk/agudo3.png" alt="agudo mágico 3" id="agudo" id="funk">
+            <div id="agudo_experimente">
+                <img src="img/funk/agudo3.png">
                 <h4 class="nome_musica">Agudo Mágico 3</h4>
                 <h4 class="cantor_musica"> Dj Aurélio, Mc K.K</h4>
             </div>
-            <div id="musica3">
-                <img src="img/MPB/construcao.icon.jpg" alt="construção" id="construcao" id="MPB">
+            <div id="construcao_experimente">
+                <img src="img/MPB/construcao.icon.jpg">
                 <h4 class="nome_musica">Construção</h4>
                 <h4 class="cantor_musica">Chico Buarque</h4>
             </div>
-            <div id="musica4">
-                <img src="img/pagode/camisa10.icon.jpg" alt="camisa 10" id="camisa10" id="pagode">
+            <div id="camisa10_experimente">
+                <img src="img/pagode/camisa10.icon.jpg">
                 <h4 class="nome_musica">Camisa 10</h4>
                 <h4 class="cantor_musica">Turma do pagode</h4>
             </div>
         </div>
 
         <div id="linha_3" class="linhas">
-            <div id="musica5">
-                <img src="img/pop/heaven.icon.jpg" alt="Locked Out of Heaven" id="heaven" id="pop">
+            <div id="heaven_experimente">
+                <img src="img/pop/heaven.icon.jpg">
                 <h4 class="nome_musica">Locked Out of Heaven</h4>
                 <h4 class="cantor_musica">Bruno Mars</h4>
             </div>
 
-            <div id="musica6">
-                <img src="img/rock/cant_stop.png" alt="can't stop" id="cantstop" id="rock">
+            <div id="cantstop_experimente">
+                <img src="img/rock/cant_stop.png">
                 <h4 class="nome_musica">Can't Stop</h4>
                 <h4 class="cantor_musica">Red Hot Chilli Pepper</h4>
             </div>
 
-            <div id="musica7">
-                <img src="img/sertanejo/evidencias.icon.jpg" alt="evidências" id="evidencias" id="sertanejo">
+            <div id="evidencias_experimente">
+                <img src="img/sertanejo/evidencias.icon.jpg">
                 <h4 class="nome_musica">Evidências</h4>
                 <h4 class="cantor_musica">Chitãozinho & Xororó</h4>
             </div>
 
-            <div id="musica8">
-                <img src="img/trap/balaazul.icon.jpg" alt="bala azul" id="balaazul" id="trap">
+            <div id="balaazul_experimente">
+                <img src="img/trap/balaazul.icon.jpg">
                 <h4 class="nome_musica">Bala azul</h4>
                 <h4 class="cantor_musica">Teto(feat. Mateca)</h4>
             </div>
@@ -103,32 +113,32 @@
         
         <h4 class="titulo_corpo">Eletrônica:</h4>
         <div id="linha_5" class="linhas">
-            <div id="musica9">
-                <img src="img/eletronica/spketrem.png" alt="shine" id="shine" id="eletronica">
+            <div id="shine">
+                <img src="img/eletronica/spketrem.png">
                 <h4 class="nome_musica">Shine</h4>
                 <h4 class="cantor_musica">Spketrem</h4>
             </div>
 
-            <div id="musica10">
-                <img src="img/eletronica/hearmenow.png" alt="hear me now" id="hearmenow" id="eletronica">
+            <div id="hearmenow">
+                <img src="img/eletronica/hearmenow.png">
                 <h4 class="nome_musica">Hear me now</h4>
                 <h4 class="cantor_musica">Alok</h4>
             </div>
 
-            <div id="musica11">
-                <img src="img/eletronica/faded.icon.jpg" alt="faded" id="faded" id="eletronica">
+            <div id="faded">
+                <img src="img/eletronica/faded.icon.jpg">
                 <h4 class="nome_musica">Faded</h4>
                 <h4 class="cantor_musica">Alan Walker</h4>
             </div>
 
-            <div id="musica12">
-                <img src="img/eletronica/animals.png" alt="animals" id="animals" id="eletronica">
+            <div id="animals">
+                <img src="img/eletronica/animals.png" alt="animals" >
                 <h4 class="nome_musica">Animals</h4>
                 <h4 class="cantor_musica">Martin Garrix</h4>
             </div>
 
-            <div id="musica13">
-                <img src="img/eletronica/alone.icon.jpg" alt="alone" id="alone" id="eletronica">
+            <div id="alone">
+                <img src="img/eletronica/alone.icon.jpg" alt="alone" >
                 <h4 class="nome_musica">Alone</h4>
                 <h4 class="cantor_musica">Marshmallow</h4>
             </div>
@@ -136,32 +146,32 @@
 
             <h4 class="titulo_corpo">Funk:</h4>
         <div id="linha_4" class="linhas">
-            <div id="musica14">
-                <img src="img/funk/agudo3.png" alt="agudo mágico 3" id="agudo3" id="funk">
+            <div id="agudo3">
+                <img src="img/funk/agudo3.png">
                 <h4 class="nome_musica">Agudo Mágico 3</h4>
                 <h4 class="cantor_musica">Dj Aurélio, Mc K.K</h4>
             </div>
 
-            <div id="musica15">
-                <img src="img/funk/fazerfalta.png" alt="fazer falta" id="fazerfalta" id="funk">
+            <div id="fazerfalta">
+                <img src="img/funk/fazerfalta.png">
                 <h4 class="nome_musica">Fazer falta</h4>
                 <h4 class="cantor_musica">Mc Livinho</h4>
             </div>
 
-            <div id="musica16">
-                <img src="img/funk/letsgo4.png" alt="lets go 4" id="letsgo4" id="funk">
+            <div id="letsgo">
+                <img src="img/funk/letsgo4.png">
                 <h4 class="nome_musica">Let's go 4</h4>
                 <h4 class="cantor_musica">Mc Ph, Mc Ig, Mc Ryan SP</h4>
             </div>
 
-            <div id="musica17">
-                <img src="img/funk/noronha.icon.jpg" alt="fernando de noronho" id="noronha" id="funk">
+            <div id="noronha">
+                <img src="img/funk/noronha.icon.jpg">
                 <h4 class="nome_musica">Fernando de Noronha</h4>
                 <h4 class="cantor_musica">Mc Ig, Mc Ph, Mc Ryan SP</h4>
             </div>
 
-            <div id="musica18">
-                <img src="img/funk/cheiademarralivinho.png" alt="cheia de marra" id="cheiademarra" id="funk">
+            <div id="cheiademarra">
+                <img src="img/funk/cheiademarralivinho.png">
                 <h4 class="nome_musica">Cheia de marra</h4>
                 <h4 class="cantor_musica">Mc Livinho</h4>
             </div>
@@ -169,32 +179,32 @@
 
             <h4 class="titulo_corpo">MPB:</h4>
         <div id="linha_4" class="linhas">
-            <div id="musica14">
-                <img src="img/MPB/cartola.png" alt="O mundo é um moinho" id="cartola" id="MPB">
+            <div id="cartola">
+                <img src="img/MPB/cartola.png">
                 <h4 class="nome_musica">O mundo é um moinho</h4>
                 <h4 class="cantor_musica">Cartola</h4>
             </div>
 
-            <div id="musica15">
-                <img src="img/MPB/cazuza.icon.jpg" alt="exagerado" id="cazuza" id="MPB">
+            <div id="exagerado">
+                <img src="img/MPB/cazuza.icon.jpg">
                 <h4 class="nome_musica">Exagerado</h4>
                 <h4 class="cantor_musica">Cazuza</h4>
             </div>
 
-            <div id="musica16">
-                <img src="img/MPB/construcao.icon.jpg" alt="construção" id="construcao" id="MPB">
+            <div id="construcao">
+                <img src="img/MPB/construcao.icon.jpg">
                 <h4 class="nome_musica">Construção</h4>
                 <h4 class="cantor_musica">Chico Buarque</h4>
             </div>
 
-            <div id="musica17">
-                <img src="img/MPB/garotadeipanema.png" alt="garota de ipanema" id="garotadeipanema" id="MPB">
+            <div id="garotadeipanema">
+                <img src="img/MPB/garotadeipanema.png">
                 <h4 class="nome_musica">Garota de Ipanema</h4>
                 <h4 class="cantor_musica">Tom Jobim</h4>
             </div>
 
-            <div id="musica18">
-                <img src="img/MPB/lulusantos.png" alt="apenas mais uma de amor" id="lulusantos" id="MPB">
+            <div id="lulusantos">
+                <img src="img/MPB/lulusantos.png">
                 <h4 class="nome_musica">Apenas mais uma de amor</h4>
                 <h4 class="cantor_musica">Lulu Santos</h4>
             </div>
@@ -202,32 +212,32 @@
 
             <h4 class="titulo_corpo">Pagode:</h4>
         <div id="linha_4" class="linhas">
-            <div id="musica14">
-                <img src="img/pagode/amidamulher.png" alt="amiga da minha mulher" id="amidamulher" id="pagode">
+            <div id="amigadamulher">
+                <img src="img/pagode/amidamulher.png">
                 <h4 class="nome_musica">Amiga da minha mulher</h4>
                 <h4 class="cantor_musica">Seu Jorge</h4>
             </div>
 
-            <div id="musica15">
-                <img src="img/pagode/camisa10.icon.jpg" alt="camisa 10" id="camisa10" id="pagode">
+            <div id="camisa10">
+                <img src="img/pagode/camisa10.icon.jpg">
                 <h4 class="nome_musica">Camisa 10</h4>
                 <h4 class="cantor_musica">Turma do pagode</h4>
             </div>
 
-            <div id="musica16">
-                <img src="img/pagode/cheiademanias.icon.jpg" alt="cheia de manias" id="cheiademanias" id="pagode">
+            <div id="cheiademanias">
+                <img src="img/pagode/cheiademanias.icon.jpg">
                 <h4 class="nome_musica">Cheia de manias</h4>
                 <h4 class="cantor_musica">Raça Negra</h4>
             </div>
 
-            <div id="musica17">
-                <img src="img/pagode/mataopapai.png" alt="assim voce mata o papai" id="mataopapai" id="pagode">
+            <div id="mataopapai">
+                <img src="img/pagode/mataopapai.png">
                 <h4 class="nome_musica">Assim você mata o papai</h4>
                 <h4 class="cantor_musica">Sorriso Maroto</h4>
             </div>
 
-            <div id="musica18">
-                <img src="img/pagode/deixaacontecer.png" alt="deixa acontecer" id="deixaacontecer" id="pagode">
+            <div id="deixaacontecer">
+                <img src="img/pagode/deixaacontecer.png">
                 <h4 class="nome_musica">Deixa acontecer</h4>
                 <h4 class="cantor_musica">Grupo Revelação</h4>
             </div>
@@ -235,32 +245,32 @@
 
             <h4 class="titulo_corpo">Phonk:</h4>
         <div id="linha_4" class="linhas">
-            <div id="musica14">
-                <img src="img/phonk/bolinhas.png" alt="bolinha de queijo" id="bolinhas" id="phonk">
+            <div id="bolinhas">
+                <img src="img/phonk/bolinhas.png">
                 <h4 class="nome_musica">Bolinha de queijo</h4>
                 <h4 class="cantor_musica">Dj Matheus da Sul, MC Gw</h4>
             </div>
 
-            <div id="musica15">
-                <img src="img/phonk/carrie.png" alt="carrie" id="carrie" id="phonk">
+            <div id="carrie">
+                <img src="img/phonk/carrie.png">
                 <h4 class="nome_musica">Carrie</h4>
                 <h4 class="cantor_musica">Ugovhb</h4>
             </div>
 
-            <div id="musica16">
-                <img src="img/phonk/infernal.png" alt="the automotivo infernal 1.0" id="phonk" id="">
+            <div id="automotivo">
+                <img src="img/phonk/infernal.png">
                 <h4 class="nome_musica">The automotivo infernal 1.0</h4>
                 <h4 class="cantor_musica">Sucvixx</h4>
             </div>
 
-            <div id="musica17">
-                <img src="img/phonk/interestelar.png" alt="ritmada interestelar" id="interestelar" id="phonk">
+            <div id="interestelar">
+                <img src="img/phonk/interestelar.png">
                 <h4 class="nome_musica">Ritmada interestelar</h4>
                 <h4 class="cantor_musica">Dj Duarte, Dj Kayo Original</h4>
             </div>
 
-            <div id="musica18">
-                <img src="img/phonk/mario.png" alt="automotivo super mario world 2" id="mario" id="phonk">
+            <div id="mario">
+                <img src="img/phonk/mario.png">
                 <h4 class="nome_musica">Automotivo Super Mario World 2</h4>
                 <h4 class="cantor_musica">Dj NK3, MC Gw</h4>
             </div>
@@ -270,31 +280,31 @@
             <h4 class="titulo_corpo">Piseiro:</h4>
         <div id="linha_4" class="linhas">
             <div id="musica14">
-                <img src="img/piseiro/aquelascoisas.png" alt="aquelas coisas" id="aquelascoisas" id="piseiro">
+                <img src="img/piseiro/aquelascoisas.png" alt="aquelas coisas" id="aquelascoisas" >
                 <h4 class="nome_musica">Aquelas coisas</h4>
                 <h4 class="cantor_musica">João Gomes</h4>
             </div>
 
-            <div id="musica15">
-                <img src="img/piseiro/baroes.png" alt="ja que me ensinou a beber" id="jaquemeensinou" id="piseiro">
+            <div id="aquelascoisas">
+                <img src="img/piseiro/baroes.png">
                 <h4 class="nome_musica">Já que me ensinou a beber</h4>
                 <h4 class="cantor_musica">Barões da pisadinha</h4>
             </div>
 
-            <div id="musica16">
-                <img src="img/piseiro/baroes.png" alt="Nunca vai ser eu" id="nuncavaiser" id="piseiro">
+            <div id="nuncavaiser">
+                <img src="img/piseiro/baroes.png">
                 <h4 class="nome_musica">Nunca vai ser eu</h4>
                 <h4 class="cantor_musica">Barões da pisadinha</h4>
             </div>
 
-            <div id="musica17">
-                <img src="img/piseiro/pecado.png" alt="meu pedaço de pecado" id="pedaçopecado" id="piseiro">
+            <div id="pedaçopecado">
+                <img src="img/piseiro/pecado.png">
                 <h4 class="nome_musica">Meu pedaço de pecado</h4>
                 <h4 class="cantor_musica">João Gomes</h4>
             </div>
 
-            <div id="musica18">
-                <img src="img/piseiro/baroes.png" alt="quem me dera" id="quemmedera" id="piseiro">
+            <div id="quemmedera">
+                <img src="img/piseiro/baroes.png">
                 <h4 class="nome_musica">Quem me dera</h4>
                 <h4 class="cantor_musica">Barões da Pisadinha</h4>
             </div>
@@ -302,32 +312,32 @@
 
             <h4 class="titulo_corpo">Pop:</h4>
         <div id="linha_4" class="linhas">
-            <div id="musica14">
-                <img src="img/pop/beat_it.png" alt="beat it" id="beatit" id="pop">
+            <div id="beatit">
+                <img src="img/pop/beat_it.png">
                 <h4 class="nome_musica">Beat It</h4>
                 <h4 class="cantor_musica">Michael Jackson</h4>
             </div>
 
-            <div id="musica15">
-                <img src="img/pop/gladyoucame.png" alt="glad you came" id="gladeyoucame" id="pop">
+            <div id="gladeyoucame">
+                <img src="img/pop/gladyoucame.png">
                 <h4 class="nome_musica">Glad you came</h4>
                 <h4 class="cantor_musica">The Wanted</h4>
             </div>
 
-            <div id="musica16">
-                <img src="img/pop/heaven.icon.jpg" alt="Locked out of heaven" id="heaven" id="pop">
+            <div id="heaven">
+                <img src="img/pop/heaven.icon.jpg">
                 <h4 class="nome_musica">Locked out of heaven</h4>
                 <h4 class="cantor_musica">Bruno Mars</h4>
             </div>
 
-            <div id="musica17">
-                <img src="img/pop/onedirection.png" alt="what makes you beautiful" id="onedirection" id="pop">
+            <div id="onedirection">
+                <img src="img/pop/onedirection.png">
                 <h4 class="nome_musica">What makes you beautifil</h4>
                 <h4 class="cantor_musica">One Direction</h4>
             </div>
 
-            <div id="musica18">
-                <img src="img/pop/shape.png" alt="shape of you" id="shape" id="pop">
+            <div id="shape">
+                <img src="img/pop/shape.png">
                 <h4 class="nome_musica">Shape of you</h4>
                 <h4 class="cantor_musica">Ed Sheeran</h4>
             </div>
@@ -335,32 +345,32 @@
 
             <h4 class="titulo_corpo">Rock:</h4>
         <div id="linha_4" class="linhas">
-            <div id="musica14">
-                <img src="img/rock/backinblack.png" alt="back in black" id="backinblack" id="rock">
+            <div id="backinblack">
+                <img src="img/rock/backinblack.png">
                 <h4 class="nome_musica">Back in black</h4>
                 <h4 class="cantor_musica">AC DC</h4>
             </div>
 
-            <div id="musica15">
-                <img src="img/rock/countdown.png" alt=" the final countdown" id="countdown" id="rock">
+            <div id="countdown">
+                <img src="img/rock/countdown.png">
                 <h4 class="nome_musica">The final countdown</h4>
                 <h4 class="cantor_musica">Europe</h4>
             </div>
 
-            <div id="musica16">
-                <img src="img/rock/gunsroses.png" alt="sweet child o' mine" id="gunsroses" id="rock">
+            <div id="gunsroses">
+                <img src="img/rock/gunsroses.png">
                 <h4 class="nome_musica">Sweet child O' mine</h4>
                 <h4 class="cantor_musica">Guns N' Roses</h4>
             </div>
 
-            <div id="musica17">
-                <img src="img/rock/hell.png" alt="highway to hell" id="hell" id="rock">
-                <h4 class="nome_musica">Highway ro hell</h4>
+            <div id="hell">
+                <img src="img/rock/hell.png">
+                <h4 class="nome_musica">Highway to hell</h4>
                 <h4 class="cantor_musica">AC DC</h4>
             </div>
 
-            <div id="musica18">
-                <img src="img/rock/rockyou.cion.jpg" alt="we will rock you" id="rockyou" id="rock">
+            <div id="rockyou">
+                <img src="img/rock/rockyou.cion.jpg">
                 <h4 class="nome_musica">We will rock you</h4>
                 <h4 class="cantor_musica">Queen</h4>
             </div>
@@ -368,32 +378,32 @@
 
             <h4 class="titulo_corpo">Sertanejo:</h4>
         <div id="linha_4" class="linhas">
-            <div id="musica14">
-                <img src="img/sertanejo/evidencias.icon.jpg" alt="evidencias" id="evidencias" id="sertanejo">
+            <div id="evidencias">
+                <img src="img/sertanejo/evidencias.icon.jpg">
                 <h4 class="nome_musica">Evidências</h4>
                 <h4 class="cantor_musica">Chitãozinho & Xororó</h4>
             </div>
 
-            <div id="musica15">
-                <img src="img/sertanejo/homemfamilia.png" alt="homem de familia" id="homem" id="sertanejo">
+            <div id="homem">
+                <img src="img/sertanejo/homemfamilia.png">
                 <h4 class="nome_musica">Homem de família</h4>
                 <h4 class="cantor_musica">Gustavo Lima</h4>
             </div>
 
-            <div id="musica16">
-                <img src="img/sertanejo/noitedia.png" alt="amo noite e dia" id="noitedia" id="sertanejo">
+            <div id="noitedia">
+                <img src="img/sertanejo/noitedia.png">
                 <h4 class="nome_musica">Amo noite e dia</h4>
                 <h4 class="cantor_musica">Jorge e Matheus</h4>
             </div>
 
-            <div id="musica17">
-                <img src="img/sertanejo/tchutcha.png" alt="eu quero tchu eu quero tcha" id="tchutcha" id="sertanejo">
+            <div id="tchutcha">
+                <img src="img/sertanejo/tchutcha.png">
                 <h4 class="nome_musica">Eu quero tchu, eu quero tcha</h4>
                 <h4 class="cantor_musica">João Lucas & Marcelo</h4>
             </div>
 
-            <div id="musica18">
-                <img src="img/sertanejo/vcvoltar.png" alt="até voce voltar" id="vcvoltar" id="sertanejo">
+            <div id="vcvoltar">
+                <img src="img/sertanejo/vcvoltar.png">
                 <h4 class="nome_musica">Até você voltar</h4>
                 <h4 class="cantor_musica">Henrique & Juliano</h4>
             </div>
@@ -401,39 +411,38 @@
 
             <h4 class="titulo_corpo">Trap:</h4>
         <div id="linha_4" class="linhas">
-            <div id="musica14">
-                <img src="img/trap/balaazul.icon.jpg" alt="bala azul" id="balazul" id="trap">
+            <div id="balazul">
+                <img src="img/trap/balaazul.icon.jpg">
                 <h4 class="nome_musica">Bala azul</h4>
                 <h4 class="cantor_musica">Teto feat. Mateca</h4>
             </div>
 
-            <div id="musica15">
-                <img src="img/trap/cicatrizes.png" alt="cicatrizes" id="cicatrizes" id="trap">
+            <div id="cicatrizes">
+                <img src="img/trap/cicatrizes.png">
                 <h4 class="nome_musica">Cicatrizes</h4>
                 <h4 class="cantor_musica">LetoDie Feat. FILL</h4>
             </div>
 
-            <div id="musica16">
-                <img src="img/trap/goosebumps.png" alt="goosebumps" id="goosebumps" id="trap">
+            <div id="goosebumps">
+                <img src="img/trap/goosebumps.png">
                 <h4 class="nome_musica">Goosebumps</h4>
                 <h4 class="cantor_musica">Travis Scott</h4>
             </div>
 
-            <div id="musica17">
-                <img src="img/trap/kalli.png" alt="kalli kallidade" id="kalli" id="trap">
+            <div id="kalli">
+                <img src="img/trap/kalli.png">
                 <h4 class="nome_musica">Kalli Kallidade</h4>
                 <h4 class="cantor_musica">Kallidade</h4>
             </div>
 
-            <div id="musica18">
-                <img src="img/trap/m4.icon.jpg" alt="m4" id="m4" id="trap">
+            <div id="m4">
+                <img src="img/trap/m4.icon.jpg">
                 <h4 class="nome_musica">M4</h4>
                 <h4 class="cantor_musica">Teto feat. Matuê</h4>
             </div>
             </div>
 
             <footer>
-
             </footer>
 
         
